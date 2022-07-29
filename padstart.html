@@ -1,0 +1,29 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <h2>padstart() method</h2>
+        <h3>padstart() method & padEnd() method both are string method</h3>
+    </head>
+    <p id = "padstart"></p>
+
+    <h2>padEnd Method</h2>
+
+    <p id = "padEnd"></p>
+    <p id = "padend"></p>
+    <body>
+        <script>
+            //stringname.padstart(paddingnumber , padding string)
+            let text = "ABC";
+            document.getElementById("padstart").innerHTML=text.padStart(4,"0");
+
+            let text2 = "B";
+            document.getElementById("padEnd").innerHTML=text2.padEnd(4,"0");
+
+            //To pad a number,first convert the number into the string
+            let text3 = 5;
+            let text4 = text3.toString();
+            document.getElementById("padend").innerHTML=text4.padEnd(4,"X");
+
+        </script>
+    </body>
+</html>
